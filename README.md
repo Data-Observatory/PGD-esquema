@@ -1,29 +1,29 @@
-# Plan de Gestión de Datos (PGD)
+# Plan de Gestión de Datos (PGD) Data Management Plan (DMP) / Borrador /
 
 <table>
 <tr>
 <td valign="top">
-<h3>Acerca de este documento</h3>
-<p>Este es un perfil de aplicación de metadatos para proporcionar interoperabilidad básica entre sistemas que producen o consumen planes de gestión de datos accionables por máquina (maDMPs). Se pueden agregar campos adicionales en implementaciones específicas, pero no garantizan la interoperabilidad. Las herramientas de DMP pueden usar otros campos en sus modelos de datos internos.</p>
-<p>Este perfil de aplicación está destinado a cubrir una amplia gama de casos de uso y no establece ningún requisito comercial específico (por ejemplo, requisitos específicos del financiador). Representa información durante todo el ciclo de vida del DMP.</p>
+<h3>Acerca de este documento / Borrador / </h3>
+<p>Este es un perfil / Borrador / para proporcionar interoperabilidad básica entre sistemas que producen o consumen planes de gestión de datos accionables por máquina (maPGDs). Se pueden agregar campos adicionales en implementaciones específicas, pero no garantizan la interoperabilidad. Las herramientas de PGD pueden usar otros campos en sus modelos de datos internos.</p>
+<p>Este perfil de aplicación está destinado a cubrir una amplia gama de casos de uso y no establece ningún requisito comercial específico (por ejemplo, requisitos específicos del financiador). Representa información durante todo el ciclo de vida del PGD.</p>
 <p>Para más información, vea <a href="https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard/tree/master/examples/JSON">ejemplos</a>, <a href="https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard/blob/master/docs/FAQ.md">preguntas frecuentes</a> y <a href="https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard/blob/master/docs/links.md">enlaces útiles a consultas, documentos, herramientas, prototipos, etc.</a> desarrollados por el grupo de trabajo.</p>
 <img src="docs/diagrams/maDMP-diagram.png"/>
 <h3>DMP</h3>
-<p>Proporciona información de alto nivel sobre el DMP, por ejemplo, su título, fecha de modificación, etc. Es la raíz de este perfil de aplicación. La mayoría de sus campos son obligatorios.</p>
+<p>Proporciona información de alto nivel sobre el PGD, por ejemplo, su título, fecha de modificación, etc. Es la raíz de este perfil de aplicación. La mayoría de sus campos son obligatorios.</p>
 <h3>Proyecto</h3>
-<p>Describe el proyecto asociado con el DMP, si corresponde. Puede usarse para describir cualquier tipo de proyecto: no solo proyectos financiados, sino también proyectos internos, tesis de doctorado, etc.</p>
+<p>Describe el proyecto asociado con el PGD, si corresponde. Puede usarse para describir cualquier tipo de proyecto: no solo proyectos financiados, sino también proyectos internos, tesis de doctorado, etc.</p>
 <h3>Financiación</h3>
 <p>Para especificar detalles sobre proyectos financiados, por ejemplo, proyectos financiados por la NSF o la CE.</p>
 <h3>Contacto</h3>
-<p>Especifica la parte que puede proporcionar cualquier información sobre el DMP. Esta no es necesariamente la persona que creó el DMP y puede ser una persona u organización.</p>
+<p>Especifica la parte que puede proporcionar cualquier información sobre el PGD. Esta no es necesariamente la persona que creó el PGD y puede ser una persona u organización.</p>
 <h3>Colaborador</h3>
-<p>Para enumerar todas las partes involucradas en el proceso de gestión de datos descrito por este DMP y aquellas partes involucradas en la creación y gestión del propio DMP.</p>
+<p>Para enumerar todas las partes involucradas en el proceso de gestión de datos descrito por este PGD y aquellas partes involucradas en la creación y gestión del propio PGD.</p>
 <h3>Costo</h3>
 <p>Proporciona una lista de costos relacionados con la gestión de datos.</p>
 <h3>Conjunto de datos</h3>
 <p>Sigue la definición de Conjunto de datos en la especificación W3C DCAT. El Conjunto de datos puede entenderse como una entidad lógica que describe datos, por ejemplo, datos sin procesar. Proporciona información de alto nivel sobre los datos. La granularidad del conjunto de datos depende de un entorno específico. En casos límite, puede ser un archivo, pero también una colección de archivos en diferentes formatos. Vea <a href="https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard/blob/master/docs/FAQ.md">FAQ</a> para más detalles.</p>
 <h3>Distribución</h3>
-<p>El término "distribución" se utiliza aquí como se define en el perfil de aplicación de metadatos W3C DCAT, ampliamente utilizado. Se utiliza para referirse a una instancia particular de un conjunto de datos que ha sido, o se pretende que sea, puesto a disposición de alguna manera. Es importante separar la noción lógica de un "conjunto de datos" de sus distribuciones, de las cuales puede haber varias, especialmente para adjuntar propiedades de metadatos más específicas, como "tamaño" y "licencia". El ciclo de vida del DMP no tiene una incidencia particular en esto, y se puede definir una "distribución" incluso si el DMP nunca se lleva a cabo realmente.</p>
+<p>El término "distribución" se utiliza aquí como se define en el perfil de aplicación de metadatos W3C DCAT, ampliamente utilizado. Se utiliza para referirse a una instancia particular de un conjunto de datos que ha sido, o se pretende que sea, puesto a disposición de alguna manera. Es importante separar la noción lógica de un "conjunto de datos" de sus distribuciones, de las cuales puede haber varias, especialmente para adjuntar propiedades de metadatos más específicas, como "tamaño" y "licencia". El ciclo de vida del PGD no tiene una incidencia particular en esto, y se puede definir una "distribución" incluso si el PGD nunca se lleva a cabo realmente.</p>
 <h3>Licencia</h3>
 <p>Se utiliza para indicar la licencia bajo la cual se pondrán a disposición los datos (cada Distribución específica). También permite modelar embargos. Vea <a href="https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard/blob/master/docs/FAQ.md">FAQ</a> para más detalles.</p>
 <h3>Alojamiento</h3>
@@ -461,7 +461,7 @@
 </tr>
 <tr>
 <td valign="top"><a id="technical_resource" href="#technical_resource_tree">recurso técnico / technical_resource</a></td>
-<td valign="top">Para enumerar todos los recursos técnicos necesarios para implementar un DMP</td>
+<td valign="top">Para enumerar todos los recursos técnicos necesarios para implementar un PGD</td>
 <td valign="top">Estructura de Datos Anidada</td>
 <td valign="top">0..n</td>
 <td valign="top"> </td>
@@ -615,14 +615,14 @@ http://vocabularies.coar-repositories.org/pubby/resource_type.html</td>
 <tbody>
 <tr>
 <td valign="top"><a id="dmp_contact" href="#dmp_contact_tree">contacto / contact</a></td>
-<td valign="top">Persona de contacto para un DMP</td>
+<td valign="top">Persona de contacto para un PGD</td>
 <td valign="top">Estructura de Datos Anidada</td>
 <td valign="top">1</td>
 <td valign="top"> </td>
 </tr>
 <tr>
 <td valign="top"><a id="dmp_contributor" href="#dmp_contributor_tree">colaborador / contributor</a></td>
-<td valign="top">Para listar personas que juegan un papel en la gestión de datos relacionados con este DMP, por ejemplo, responsables de realizar acciones descritas en este DMP.</td>
+<td valign="top">Para listar personas que juegan un papel en la gestión de datos relacionados con este PGD, por ejemplo, responsables de realizar acciones descritas en este PGD.</td>
 <td valign="top">Estructura de Datos Anidada</td>
 <td valign="top">0..n</td>
 <td valign="top"> </td>
@@ -636,7 +636,7 @@ http://vocabularies.coar-repositories.org/pubby/resource_type.html</td>
 </tr>
 <tr>
 <td valign="top"><a id="dmp_created" href="#dmp_created_tree">creado / created</a></td>
-<td valign="top">Fecha y hora de la primera versión de un DMP. No debe cambiarse en DMP posteriores. Codificado usando la cadena de fecha y hora relevante de ISO 8601 <a href="https://www.w3.org/TR/NOTE-datetime">compliant string</a></td>
+<td valign="top">Fecha y hora de la primera versión de un PGD. No debe cambiarse en PGD posteriores. Codificado usando la cadena de fecha y hora relevante de ISO 8601 <a href="https://www.w3.org/TR/NOTE-datetime">compliant string</a></td>
 <td valign="top">Fecha y Hora</td>
 <td valign="top">1</td>
 <td valign="top">2019-03-13T13:13:00</td>
@@ -650,28 +650,28 @@ http://vocabularies.coar-repositories.org/pubby/resource_type.html</td>
 </tr>
 <tr>
 <td valign="top"><a id="dmp_description" href="#dmp_description_tree">descripción / description</a></td>
-<td valign="top">Para proporcionar cualquier información de texto libre en un DMP</td>
+<td valign="top">Para proporcionar cualquier información de texto libre en un PGD</td>
 <td valign="top">Cadena</td>
 <td valign="top">0..1</td>
-<td valign="top">Este DMP es para nuestro nuevo proyecto</td>
+<td valign="top">Este PGD es para nuestro nuevo proyecto</td>
 </tr>
 <tr>
 <td valign="top"><a id="dmp_id" href="#dmp_id_tree">dmp_id</a></td>
-<td valign="top">Identificador para el propio DMP</td>
+<td valign="top">Identificador para el propio PGD</td>
 <td valign="top">Estructura de Datos Anidada</td>
 <td valign="top">1</td>
 <td valign="top"> </td>
 </tr>
 <tr>
 <td valign="top"><a id="ethical_issues_description" href="#ethical_issues_description_tree">descripción de cuestiones éticas / ethical_issues_description</a></td>
-<td valign="top">Para describir cuestiones éticas directamente en un DMP</td>
+<td valign="top">Para describir cuestiones éticas directamente en un PGD</td>
 <td valign="top">Cadena</td>
 <td valign="top">0..1</td>
 <td valign="top">Hay cuestiones éticas, porque...</td>
 </tr>
 <tr>
 <td valign="top"><a id="ethical_issues_exist" href="#ethical_issues_exist_tree">cuestiones éticas existen / ethical_issues_exist</a></td>
-<td valign="top">Para indicar si hay cuestiones éticas relacionadas con los datos que este DMP describe.<br/>Valores permitidos:<ul><li>sí</li><li>no</li><li>desconocido</li></ul></td>
+<td valign="top">Para indicar si hay cuestiones éticas relacionadas con los datos que este PGD describe.<br/>Valores permitidos:<ul><li>sí</li><li>no</li><li>desconocido</li></ul></td>
 <td valign="top">Término de Vocabulario Controlado</td>
 <td valign="top">1</td>
 <td valign="top">sí</td>
@@ -685,31 +685,31 @@ http://vocabularies.coar-repositories.org/pubby/resource_type.html</td>
 </tr>
 <tr>
 <td valign="top"><a id="dmp_language" href="#dmp_language_tree">idioma / language</a></td>
-<td valign="top">Idioma del DMP expresado usando ISO 639-3</td>
+<td valign="top">Idioma del PGD expresado usando ISO 639-3</td>
 <td valign="top">Término de Vocabulario Controlado</td>
 <td valign="top">1</td>
 <td valign="top">eng</td>
 </tr>
 <tr>
 <td valign="top"><a id="dmp_modified" href="#dmp_modified_tree">modificado / modified</a></td>
-<td valign="top">Debe establecerse cada vez que se modifique el DMP. Indica la versión del DMP. Codificado usando la cadena de fecha y hora relevante de ISO 8601 <a href="https://www.w3.org/TR/NOTE-datetime">compliant string</a></td>
+<td valign="top">Debe establecerse cada vez que se modifique el PGD. Indica la versión del PGD. Codificado usando la cadena de fecha y hora relevante de ISO 8601 <a href="https://www.w3.org/TR/NOTE-datetime">compliant string</a></td>
 <td valign="top">Fecha y Hora</td>
 <td valign="top">1</td>
 <td valign="top">2020-03-14T10:53:49</td>
 </tr>
 <tr>
 <td valign="top"><a id="project" href="#project_tree">proyecto / project</a></td>
-<td valign="top">Proyecto relacionado con un DMP</td>
+<td valign="top">Proyecto relacionado con un PGD</td>
 <td valign="top">Estructura de Datos Anidada</td>
 <td valign="top">0..n</td>
 <td valign="top"> </td>
 </tr>
 <tr>
 <td valign="top"><a id="dmp_title" href="#dmp_title_tree">título / title</a></td>
-<td valign="top">Título de un DMP</td>
+<td valign="top">Título de un PGD</td>
 <td valign="top">Cadena</td>
 <td valign="top">1</td>
-<td valign="top">DMP para nuestro nuevo proyecto</td>
+<td valign="top">PGD para nuestro nuevo proyecto</td>
 </tr>
 </tbody>
 </table>
@@ -729,7 +729,7 @@ http://vocabularies.coar-repositories.org/pubby/resource_type.html</td>
 <tbody>
 <tr>
 <td valign="top"><a id="dmp_id_id" href="#dmp_id_id_tree">identificador / identifier</a></td>
-<td valign="top">Identificador para un DMP</td>
+<td valign="top">Identificador para un PGD</td>
 <td valign="top">Cadena</td>
 <td valign="top">1</td>
 <td valign="top">https://doi.org/10.1371/journal.pcbi.1006750</td>
@@ -1046,7 +1046,7 @@ http://vocabularies.coar-repositories.org/pubby/resource_type.html</td>
 <tbody>
 <tr>
 <td valign="top"><a id="project_description" href="#project_description_tree">descripción / description</a></td>
-<td valign="top">Descripción del proyecto relacionado con este DMP</td>
+<td valign="top">Descripción del proyecto relacionado con este PGD</td>
 <td valign="top">Cadena</td>
 <td valign="top">0..1</td>
 <td valign="top">Este proyecto tiene como objetivo...</td>
@@ -1060,7 +1060,7 @@ http://vocabularies.coar-repositories.org/pubby/resource_type.html</td>
 </tr>
 <tr>
 <td valign="top"><a id="funding" href="#funding_tree">financiación / funding</a></td>
-<td valign="top">Para enumerar las fuentes de financiación del proyecto relacionado con este DMP</td>
+<td valign="top">Para enumerar las fuentes de financiación del proyecto relacionado con este PGD</td>
 <td valign="top">Estructura de Datos Anidada</td>
 <td valign="top">0..n</td>
 <td valign="top"> </td>
